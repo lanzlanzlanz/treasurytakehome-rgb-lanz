@@ -16,7 +16,7 @@ pip install -r requirements.txt
 bash
 python main.py
 
-2.0 Strategic Alignment & Methodology
+### 2.0 Strategic Alignment & Methodology
 This Command Line Interface (CLI) application was developed to address operational bottlenecks identified during the Compliance Division discovery phase. The technical architecture maps directly to stakeholder requirements as follows:
 
 Network Security & Latency Mitigation (Ref: IT Operations / Leadership): Acknowledging current outbound traffic constraints and the requirement for sub-5-second processing times, this iteration operates as a stateless, localized deployment. The architecture utilizes a scan_mock service module to simulate a 3-second data extraction event. This fulfills the proof-of-concept requirements for speed and usability without necessitating external API authorization or firewall policy exceptions.
@@ -29,7 +29,7 @@ Tolerance Protocol: For standardized fields (e.g., Producer Name), the system ut
 
 Strict Compliance Protocol: Mandatory statutory elements (i.e., the Government Health Warning) are subjected to rigid, character-exact string matching to enforce strict adherence to mandated capitalization and verbiage requirements.
 
-3.0 Operational Assumptions & Future State Integration
+### 3.0 Operational Assumptions & Future State Integration
 Data Ingestion Assumption: It is presumed that in a production environment, the scan_mock simulation will be superseded by a sanctioned, multi-modal Large Language Model (LLM) capable of analyzing image assets and returning structured JSON payloads.
 
 Phase 2 Migration: Contingent upon successful security audits and the provisioning of approved outbound API pathways, the localized simulation function is engineered to be fully modular. It can be seamlessly replaced with a live, FedRAMP-authorized LLM endpoint to achieve full operational capability.
